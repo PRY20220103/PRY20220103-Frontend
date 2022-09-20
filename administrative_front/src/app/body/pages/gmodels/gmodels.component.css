@@ -1,0 +1,25 @@
+table {
+    width: 100%;
+
+  }
+  
+  .mat-header-cell {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .mat-cell {
+    text-align: center;
+    justify-content:center;
+  }
+
+  .head{
+    display: flex;
+    justify-content: center;
+  }
+
+  .add-model{
+    display: flex;
+    justify-content: right;
+  }
