@@ -8,6 +8,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatInputModule } from '@angular/material/input';
 
 
 
@@ -15,6 +16,7 @@ import { SolicitudComponent } from './pages/solicitud/solicitud.component';
 import { LogComponent } from './pages/log/log.component';
 import { GmodelsComponent } from './pages/gmodels/gmodels.component';
 import { PrincipalComponent } from './principal/principal.component';
+import {MatSortModule} from '@angular/material/sort';
 
 
 
@@ -33,7 +35,9 @@ import { PrincipalComponent } from './principal/principal.component';
     MatIconModule,
     MatButtonModule,
     MatFormFieldModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatSortModule,
+    MatInputModule
   ]
 })
 export class BodyModule { }
