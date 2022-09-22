@@ -2,6 +2,8 @@ import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
+import { Router } from '@angular/router';
+import { SenderService } from 'src/app/sender.service';
 
 
 export interface Model {
@@ -54,12 +56,12 @@ export class GmodelsComponent implements AfterViewInit {
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
 
-  constructor() {
+  constructor(private router: Router, private service: SenderService) {
     const users = Array.from({length: 100}, (_, k) => createNewModel(k + 1));
 
     // Assign the data to the data source for the table to render
     this.dataSource = new MatTableDataSource(users);
-    
+
    }
 
   ngAfterViewInit() {
@@ -74,6 +76,12 @@ export class GmodelsComponent implements AfterViewInit {
     if (this.dataSource.paginator) {
       this.dataSource.paginator.firstPage();
     }
+  }
+
+  testing(aux: Model){
+      this.service.data = aux;
+      this.router.navigate(["/models/comments"])
+
   }
 
 

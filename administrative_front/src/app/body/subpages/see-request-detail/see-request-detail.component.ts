@@ -24,9 +24,9 @@ export class SeeRequestDetailComponent implements OnInit {
 
   ngOnInit(): void {
     this.detailService = this.service.data
-    console.log(this.detailService.name)
+    console.log(this.detailService.rol)
   }
 
-  
+
 
 }
