@@ -10,13 +10,17 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatInputModule } from '@angular/material/input';
 
-
+import { MatSelectModule } from '@angular/material/select';
 
 import { SolicitudComponent } from './pages/solicitud/solicitud.component';
 import { LogComponent } from './pages/log/log.component';
 import { GmodelsComponent } from './pages/gmodels/gmodels.component';
 import { PrincipalComponent } from './principal/principal.component';
 import {MatSortModule} from '@angular/material/sort';
+import { AddModelComponent } from './subpages/add-model/add-model.component';
+import { SeeRequestDetailComponent } from './subpages/see-request-detail/see-request-detail.component';
+import { SeeCommentsComponent } from './subpages/see-comments/see-comments.component';
+
 
 
 
@@ -26,7 +30,10 @@ import {MatSortModule} from '@angular/material/sort';
     SolicitudComponent,
     LogComponent,
     GmodelsComponent,
-    PrincipalComponent
+    PrincipalComponent,
+    AddModelComponent,
+    SeeRequestDetailComponent,
+    SeeCommentsComponent
   ],
   imports: [
     CommonModule,
@@ -37,7 +44,8 @@ import {MatSortModule} from '@angular/material/sort';
     MatFormFieldModule,
     MatPaginatorModule,
     MatSortModule,
-    MatInputModule
+    MatInputModule,
+    MatSelectModule
   ]
 })
 export class BodyModule { }

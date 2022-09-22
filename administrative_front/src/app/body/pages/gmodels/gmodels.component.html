@@ -15,7 +15,7 @@
 <div class="filtro">
     <mat-form-field appearance="standard">
         <mat-label>Filter</mat-label>
-        <input matInput (keyup)="applyFilter($event)" placeholder="Ex. ium" #input>
+        <input matInput (keyup)="applyFilter($event)" placeholder="Ex. Piramide" #input>
       </mat-form-field>
 </div>
 
@@ -52,7 +52,7 @@
         <ng-container matColumnDef="actions">
             <th mat-header-cell *matHeaderCellDef> Actions </th>
             <td mat-cell *matCellDef="let element">
-                <button mat-button color="primary" style="margin-right: 2.5vh;">Comentarios</button> 
+                <button mat-button color="primary" style="margin-right: 2.5vh;" routerLink = "/models/comments">Comentarios</button> 
                 <button mat-icon-button color="primary">
                     <mat-icon>delete</mat-icon>
                 </button>
@@ -73,7 +73,7 @@
 
 
 <div class="add-model">
-    <button mat-fab color="primary">
+    <button mat-fab color="primary" routerLink = "/models/add">
         <mat-icon>add</mat-icon>
     </button>
 </div>
