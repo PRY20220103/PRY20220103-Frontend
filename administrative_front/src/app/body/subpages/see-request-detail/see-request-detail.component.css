@@ -1,0 +1,26 @@
+.head{
+    display: flex;
+    justify-content: center;
+  }
+  .button-headers{
+    width: 95%;
+    display: flex;
+    align-self: center;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
+  .request-details{
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+  }
+
+  .buttons-accept{
+    display: flex;
+    flex-direction: row;
+    
+  }

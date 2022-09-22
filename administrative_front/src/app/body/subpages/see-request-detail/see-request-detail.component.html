@@ -1,1 +1,31 @@
-<p>see-request-detail works!</p>
+<div class="container">
+<div><h2>AMRARM3D</h2> </div>
+    <div class="head">
+       <h1>Gestion de Solicitudes: {{this.detailService.name}}</h1> 
+    </div>
+    
+    <div class="button-headers">
+        <button mat-raised-button color="primary" routerLink = "/solicitud" class="demo-button">
+          Volver
+        </button>
+    </div>
+
+    <div class="request-details">
+        <h2>Descripcion: {{this.detailService.desc}}</h2>
+        <h2>Rol: {{this.detailService.rol}}</h2>
+        <h2>Curso: {{this.detailService.category}}</h2>
+        <h2>Grado: {{this.detailService.grade}}</h2>
+        <h2>Status: {{this.detailService.status}}</h2>
+
+        <div class="buttons-accept">
+            <button mat-raised-button color="primary">
+                Aceptar
+              </button>
+
+              <button mat-raised-button color="primary">
+                Denegar
+              </button>
+        </div>
+    </div>   
+    
+</div>
