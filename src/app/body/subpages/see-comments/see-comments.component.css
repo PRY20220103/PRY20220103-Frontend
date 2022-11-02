@@ -1,0 +1,32 @@
+.head{
+    display: flex;
+    justify-content: center;
+  }
+  .button-headers{
+    width: 95%;
+    display: flex;
+    align-self: center;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+  .comment-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+  }

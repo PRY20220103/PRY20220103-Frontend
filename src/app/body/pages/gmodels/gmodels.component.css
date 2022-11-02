@@ -1,0 +1,58 @@
+table {
+    width: 100%;
+  }
+  
+  .mat-header-cell {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .mat-cell {
+    text-align: center;
+    justify-content:center;
+  }
+
+  .head{
+    display: flex;
+    justify-content: center;
+  }
+
+  .add-model{
+    width: 95%;
+    display: flex;
+    justify-content: right;
+    align-self: center;
+  }
+
+  .mat-form-field {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .filtro{
+    width: 95%;
+    display: flex;
+    align-self: center;
+  }
+
+  .button-headers{
+    width: 95%;
+    display: flex;
+    align-self: center;
+  }
+
+  .tabla{
+    width: 95%;
+    align-self: center;
+  }
+
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .add-model{
+    padding-top: 2vh;
+  }
+  
